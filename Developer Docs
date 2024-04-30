@@ -1,5 +1,4 @@
-![Design Diagram](https://github.com/btondryk/CSC322_Final_Proj/blob/main/Design%20Diagram.png?raw=true)
-
+![Design Diagram](https://github.com/btondryk/CSC322_Final_Proj/raw/main/Design%20Diagram.png)
 Start up/boot up: The Raspberry Pi runs a cron job at reboot that runs a python script. If the cron job is terminated, the script will not run.
 Load Starting Image: Once the Raspberry Pi, reboots, the python script is accessed and will display a starting image to signify that the Raspberry Pi is running the correct script. Along with loading the starting image, the script imports libraries and provides paths to the images directory. It will also pass in the wiring to the main function.
 Check Limit Switch: If the limit switch is pressed, the press will call a method "dislay_random_image". The method will first randomly choose one of the 28 images. Then the script will open the random image, and orient it on the disk with a 180 degree rotation. 
